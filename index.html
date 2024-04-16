@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Jitur</title>
+  </head>
+  <body>
+    <!-- Sessão Navbar -->
+    <section class="Nav">
+      <div class="navbar neutral">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">Jitur</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Sobre</a></li>
+            <li><a>Pacotes</a></li>
+            <li><a>Localização</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Contato</a>
+        </div>
+      </div>
+    </section>
+
+<!-- Sessão Hero -->
+<section class="Hero relative">
+  <!-- Adicionamos a classe relative para permitir o posicionamento relativo do conteúdo interno -->
+  <div class="hero min-h-screen bg-base-200 flex flex-col justify-center">
+    <div class="hero-content text-center mb-10">
+      <div class="max-w-md mx-auto">
+        <button class="btn btn-outline rounded-badge pointer-events-none">
+          <p class="">Best travel platform in 2023 ✈️ 🤩</p>
+        </button>
+        <h1 class="text-5xl font-bold pt-2">
+          Where will your travel take you?
+        </h1>
+        <p class="py-6">Search deals on hotels, homes, and much more...</p>
+      </div>
+    </div>
+
+    <!-- Formulário dentro da sessão Hero -->
+    <div class="container mx-auto p-4">
+      <div class="rounded-xl p-4 bg-white">
+        <form
+          action="#"
+          method="post"
+          class="space-y-4 lg:space-y-0 lg:flex lg:justify-between lg:items-center"
+        >
+          <!-- Para onde -->
+          <label class="form-control max-w-full">
+            <div class="label">
+              <span class="label-text text-primary-content"
+                >Para onde você deseja ir?</span
+              >
+            </div>
+            <input
+              type="text"
+              placeholder="Cidade, Estado, País..."
+              class="input input-ghost w-full h-sm max-w-full"
+            />
+          </label>
+
+          <!-- Check-in -->
+          <label class="form-control max-w-full">
+            <div class="label">
+              <span class="label-text text-primary-content"
+                >Check-in</span
+              >
+            </div>
+            <input
+              type="date"
+              min="2024-01-01"
+              max="2024-12-31"
+              placeholder="Escolha uma data"
+              class="input input-ghost w-full h-sm max-w-full"
+            />
+          </label>
+
+          <!-- Check-out -->
+          <label class="form-control max-w-full">
+            <div class="label">
+              <span class="label-text text-primary-content"
+                >Check-out</span
+              >
+            </div>
+            <input
+              type="date"
+              min="2024-01-01"
+              max="2024-12-31"
+              placeholder="Escolha uma data"
+              class="input input-ghost w-full h-sm max-w-full"
+            />
+          </label>
+
+          <!-- Pessoas -->
+          <label class="form-control max-w-full">
+            <div class="label">
+              <span class="label-text text-primary-content">Pessoas</span>
+            </div>
+            <input
+              type="number"
+              min="1"
+              placeholder="Número de Pessoas"
+              class="input input-ghost w-full h-sm max-w-full"
+            />
+          </label>
+
+          <!-- Botão de envio -->
+          <button type="submit" class="btn btn-primary w-full lg:w-auto">
+            Reservar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Próxima sessão -->
+    <section class="NextSection">
+      <div class="min-h-screen bg-base-100"></div>
+      <!-- Conteúdo da próxima sessão aqui -->
+    </section>
+  </body>
+</html>
