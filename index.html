@@ -1,177 +1,232 @@
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="style.css" />
-      <!-- DaisyUI -->
-      <link
-        href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css"
-        rel="stylesheet"
-        type="text/css"
-      />
-      <!-- JQuery -->
-      <script
-        src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-        crossorigin="anonymous"
-      ></script>
-      <!-- Tailwind -->
-      <script src="https://cdn.tailwindcss.com"></script>
-      <!-- Select2 -->
-      <link
-        href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
-        rel="stylesheet"
-      />
-      <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-      <!-- CSS -->
-      <link rel="stylesheet" href="style.css" />
-      <title>Jitur</title>
-    </head>
-    <body>
-      <!-- Sessão Navbar -->
-      <section class="Nav bg-success-content">
-        <div class="navbar">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Select2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Jitur</title>
+  </head>
+  <body>
+    <!-- Sessão Navbar -->
+    <section class="Nav bg-success-content">
+      <div class="navbar">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                <li><a>Sobre</a></li>
-                <li><a>Pacotes</a></li>
-                <li><a>Localização</a></li>
-              </ul>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
             </div>
-            <a class="btn btn-ghost text-xl">Jitur</a>
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
               <li><a>Sobre</a></li>
               <li><a>Pacotes</a></li>
               <li><a>Localização</a></li>
             </ul>
           </div>
-          <div class="navbar-end">
-            <a class="btn">Contato</a>
+          <a class="btn btn-ghost text-xl">
+            <img src="/jitursite/assets/img/jiturlg.png" alt="Logo da Jitur">
+          </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Sobre</a></li>
+            <li><a>Pacotes</a></li>
+            <li><a>Localização</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Contato</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sessão Hero -->
+    <section class="Hero relative">
+      <div
+        class="hero min-h-screen flex flex-col justify-center"
+        style="background-image: url(/jitursite/assets/img/img.jpg)"
+      >
+        <div class="hero-content text-center mb-10 text-info-content">
+          <div class="max-w-md mx-auto">
+            <button
+              class="btn btn-outline rounded-badge pointer-events-none text-info-content"
+            >
+              <p class="">Melhor plataforma de viagens de Ji-Paraná! ✈️ 🤩</p>
+            </button>
+            <h1 class="text-5xl font-bold pt-2">
+              Onde seus sonhos querem te levar?
+            </h1>
+            <p class="py-6">Procure ofertas em hotéis, passagens aéreas, e muito mais...</p>
           </div>
         </div>
-      </section>
 
-      <!-- Sessão Hero -->
-      <section class="Hero relative">
-        <div
-          class="hero min-h-screen flex flex-col justify-center"
-          style="
-            background-image: url(/assets/img/img.jpg);
-          "
-        >
-          <div class="hero-content text-center mb-10 text-info-content">
-            <div class="max-w-md mx-auto">
-              <button class="btn btn-outline rounded-badge pointer-events-none text-info-content">
-                <p class="">Best travel platform in 2023 ✈️ 🤩</p>
-              </button>
-              <h1 class="text-5xl font-bold pt-2">
-                Where will your travel take you?
-              </h1>
-              <p class="py-6">Search deals on hotels, homes, and much more...</p>
-            </div>
+        <!-- Formulário dentro da sessão Hero -->
+        <div class="container mx-auto p-4">
+          <div class="rounded-xl p-4 bg-white">
+            <form
+              action="#"
+              method="post"
+              class="space-y-4 lg:space-y-0 lg:flex lg:justify-between lg:items-center"
+            >
+              <!-- Cidade, Estado, País -->
+              <label for="locais" class="form-control sp">
+                <div class="label">
+                  <span class="label-text text-primary-content"
+                    >Para onde você deseja ir?
+                  </span>
+                </div>
+                <select class="campoPais" id="campoPais" name="pais">
+                  <option></option>
+                </select>
+                <select class="campoEstado" id="campoEstado" name="estado">
+                  <option></option>
+                </select>
+                <select class="campoCidade" id="campoCidade" name="cidade">
+                  <option></option>
+                </select>
+              </label>
+
+              <!-- Check-in -->
+              <label class="form-control max-w-full">
+                <div class="label">
+                  <span class="label-text text-primary-content">Check-in</span>
+                </div>
+                <input
+                  type="date"
+                  min="2024-01-01"
+                  max="2024-12-31"
+                  placeholder="Escolha uma data"
+                  class="z-1 w-full input input-ghost w-full h-sm btn"
+                />
+              </label>
+
+              <!-- Check-out -->
+              <label class="form-control max-w-full">
+                <div class="label">
+                  <span id="textoCheckIn" class="label-text text-primary-content">Check-out?</span>
+                  <input type="checkbox" class="checkbox ml-3 bg-neutral-content" />
+                </div>
+                <input
+                  id="checkBox"
+                  type="date"
+                  min="2024-01-01"
+                  max="2024-12-31"
+                  style="display: none"
+                  placeholder="Escolha uma data"
+                  class="z-1 w-full input input-ghost w-full h-sm btn btn-disabled"
+                />
+              </label>
+
+              <!-- Pessoas -->
+              <label class="form-control max-w-full">
+                <div class="label">
+                  <span class="label-text text-primary-content">Pessoas</span>
+                </div>
+                <input
+                  type="number"
+                  min="1"
+                  placeholder="Número de Pessoas"
+                  class="input input-ghost w-full h-sm max-w-full"
+                />
+              </label>
+                
+              <!-- Botão de envio -->
+              <div onclick="my_modal_5.showModal()">
+                <button type="submit" class="btn btn-outline btn-accent w-full lg:w-auto">Reservar</button>
+              </div>
+              
+              <dialog id="alertReservar" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box">
+                  <h3 class="font-bold text-lg">Hello!</h3>
+                  <p class="py-4">Pressione a tecla ESC ou clique no botão abaixo para fechar</p>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <!-- Se houver um botão no formulário, ele fechará o modal -->
+                      <button id="fecharReservar" class="btn">Fechar</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+              
+            </form>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Formulário dentro da sessão Hero -->
-          <div class="container mx-auto p-4">
-            <div class="rounded-xl p-4 bg-white">
-              <form
-                action="#"
-                method="post"
-                class="space-y-4 lg:space-y-0 lg:flex lg:justify-between lg:items-center"
-              >
-                <!-- Cidade, Estado, País -->
-                <label for="locais" class="form-control">
-                  <div class="label">
-                    <span class="label-text text-primary-content"
-                      >Para onde você deseja ir?
-                    </span>
-                  </div>
-                  <select class="campoLocais" id="campoLocais" name="state">
-                    <option></option>
-                  </select>
-                </label>
-
-                <!-- Check-in -->
-                <label class="form-control max-w-full">
-                  <div class="label">
-                    <span class="label-text text-primary-content">Check-in</span>
-                  </div>
-                  <input
-                    type="date"
-                    min="2024-01-01"
-                    max="2024-12-31"
-                    placeholder="Escolha uma data"
-                    class="input input-ghost w-full h-sm max-w-full"
-                  />
-                </label>
-
-                <!-- Check-out -->
-                <label class="form-control max-w-full">
-                  <div class="label">
-                    <span class="label-text text-primary-content">Check-out</span>
-                    <input type="checkbox" class="checkbox bg-neutral-content" />
-                  </div>
-                  <input
-                    id="checkBox"
-                    type="date"
-                    min="2024-01-01"
-                    max="2024-12-31"
-                    placeholder="Escolha uma data"
-                    class="z-1 w-full input input-ghost w-full h-sm btn btn-disabled"
-                  />
-                </label>
-
-                <!-- Pessoas -->
-                <label class="form-control max-w-full">
-                  <div class="label">
-                    <span class="label-text text-primary-content">Pessoas</span>
-                  </div>
-                  <input
-                    type="number"
-                    min="1"
-                    placeholder="Número de Pessoas"
-                    class="input input-ghost w-full h-sm max-w-full"
-                  />
-                </label>
-
-                <!-- Botão de envio -->
-                <button type="submit" class="btn btn-primary w-full lg:w-auto">
-                  Reservar
-                </button>
-              </form>
+    <section class="Sobre relative">
+      <div class="hero min-h-screen flex gap-10 justify-center">
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Próxima sessão -->
-      <section class="NextSection">
-        <div class="min-h-screen bg-base-100"></div>
-        <!-- Conteúdo da próxima sessão aqui -->
-      </section>
-      <!-- Script -->
-      <script src="app.js"></script>
-    </body>
-  </html>
+
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Script -->
+    <script src="app.js"></script>
+  </body>
+</html>
