@@ -60,7 +60,7 @@
             </ul>
           </div>
           <a class="btn btn-ghost text-xl">
-            <img src="/jitursite/assets/img/jiturlg.png" alt="Logo da Jitur">
+            <img src="/assets/img/jiturlg.png" alt="Logo da Jitur">
           </a>
         </div>
         <div class="navbar-center hidden lg:flex">
@@ -80,7 +80,7 @@
     <section class="Hero relative">
       <div
         class="hero min-h-screen flex flex-col justify-center"
-        style="background-image: url(/jitursite/assets/img/img.jpg)"
+        style="background-image: url(/assets/img/img.jpg)"
       >
         <div class="hero-content text-center mb-10 text-info-content">
           <div class="max-w-md mx-auto">
@@ -105,23 +105,18 @@
               class="space-y-4 lg:space-y-0 lg:flex lg:justify-between lg:items-center"
             >
               <!-- Cidade, Estado, País -->
-              <label for="locais" class="form-control sp">
+              <label for="locais" class="form-control">
                 <div class="label">
-                  <span class="label-text text-primary-content"
-                    >Para onde você deseja ir?
-                  </span>
+                  <span class="label-text text-primary-content">Para onde você deseja ir?</span>
                 </div>
-                <select class="campoPais" id="campoPais" name="pais">
+                <select class="campo-estado" id="campoEstado" name="estado">
                   <option></option>
                 </select>
-                <select class="campoEstado" id="campoEstado" name="estado">
+                <select class="campo-municipio" id="campoMunicipio" name="municipio">
                   <option></option>
                 </select>
-                <select class="campoCidade" id="campoCidade" name="cidade">
-                  <option></option>
-                </select>
-              </label>
-
+              </label>              
+              
               <!-- Check-in -->
               <label class="form-control max-w-full">
                 <div class="label">
@@ -167,7 +162,7 @@
               </label>
                 
               <!-- Botão de envio -->
-              <div onclick="my_modal_5.showModal()">
+              <div onclick="alertReservar.showModal()">
                 <button type="submit" class="btn btn-outline btn-accent w-full lg:w-auto">Reservar</button>
               </div>
               
